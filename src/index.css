@@ -327,6 +327,7 @@ select {
   color: #bdb9b3;
 }
 .hero__tagline {
+  display: none;
   width: 30px;
   height: 1px;
   background: rgba(255, 255, 255, 0.35);
