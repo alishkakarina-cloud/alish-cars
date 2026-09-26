@@ -186,7 +186,10 @@ export default function App() {
     <div className="page" id="top">
       {/* ---------- 1. Шапка + первый экран ---------- */}
       <section className="hero">
-        <img className="hero__bg" src="/img/hero.jpg" alt="Li Auto на набережной на закате" />
+        <picture>
+          <source media="(max-width: 1099px)" srcSet="/img/hero-m.jpg" />
+          <img className="hero__bg" src="/img/hero.jpg" alt="Li Auto на набережной на закате" fetchPriority="high" />
+        </picture>
         <header className="header">
           <a href="#top" className="logo">
             ALISH CARS

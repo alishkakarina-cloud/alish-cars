@@ -327,7 +327,6 @@ select {
   color: #bdb9b3;
 }
 .hero__tagline {
-  display: none;
   width: 30px;
   height: 1px;
   background: rgba(255, 255, 255, 0.35);
@@ -934,7 +933,12 @@ html:not(.is-desktop) .hero {
   flex-direction: column;
 }
 html:not(.is-desktop) .hero__bg {
-  object-position: 72% center;
+  top: auto;
+  bottom: 0;
+  height: 72%;
+  object-position: 62% 60%;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 22%);
+  mask-image: linear-gradient(180deg, transparent 0, #000 22%);
 }
 html:not(.is-desktop) .hero::before {
   background: linear-gradient(
